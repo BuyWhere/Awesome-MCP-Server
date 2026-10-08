@@ -1,79 +1,239 @@
-# Awesome-MCP-Server 🚀  
+<div align="center">
 
-This repository contains **MCP (Model Context Protocol) servers** . Each folder represents a different MCP server implementation.  
+# Awesome MCP Servers
 
-## 📂 Server Implementations  
+**A curated directory of Model Context Protocol servers — plus runnable reference implementations you can learn from.**
 
-1. **Weather Server** 🌦️  
-   - Fetches real-time weather details and forecasts.  
-   - Can be integrated with MCP clients like **Claude for Desktop**.  
+[![Stars](https://img.shields.io/github/stars/AIAnytime/Awesome-MCP-Server?style=flat-square&color=f5c518)](https://github.com/AIAnytime/Awesome-MCP-Server/stargazers)
+[![Forks](https://img.shields.io/github/forks/AIAnytime/Awesome-MCP-Server?style=flat-square&color=6f42c1)](https://github.com/AIAnytime/Awesome-MCP-Server/network/members)
+[![Contributors](https://img.shields.io/github/contributors/AIAnytime/Awesome-MCP-Server?style=flat-square&color=0aa)](https://github.com/AIAnytime/Awesome-MCP-Server/graphs/contributors)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+[![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-spec-black?style=flat-square)](https://modelcontextprotocol.io)
 
-2. **LinkedIn Profile Server** 🔗  
-   - Retrieves LinkedIn profile data via an external API from RapidAPI.  
-   - Enables AI models to process professional profile insights.
-  
-3. **Fetch PubMed Article Server** 🔗
-   - Retrieves articles from PubMed given a query.
+[Servers in this repo](#-servers-in-this-repo) · [Community directory](#-community-directory) · [Contributing](#-contributing) · [Resources](#-resources)
 
-4. **Roundtable** 🤖
-   - Zero-configuration MCP server that unifies multiple AI coding assistants (Codex, Claude Code, Cursor, Gemini).
-   - Provides intelligent auto-discovery and standardized interface across AI tools.
-   - Repository: [askbudi/roundtable](https://github.com/askbudi/roundtable) | Website: [askbudi.ai/roundtable](https://askbudi.ai/roundtable)
-
-5. **claude-node** 🐍
-   - Python subprocess bridge for Claude Code CLI, giving Python code direct access to Claude Code native capabilities via stream-json.
-   - Repository: [claw-army/claude-node](https://github.com/claw-army/claude-node)
-
-6. **Antigravity Link** 📱
-
-7. **prompt-to-asset** 🎨
-   - Routes image-generation prompts to 30+ models — DALL-E, Stable Diffusion, Flux, Midjourney, and more — through a single MCP interface.
-   - Install: `npm install -g prompt-to-asset`
-   - Repository: [MohamedAbdallah-14/prompt-to-asset](https://github.com/MohamedAbdallah-14/prompt-to-asset)
-
-   - MCP server and mobile companion for Google's Antigravity IDE. Mirror active AI chat sessions on your phone, send messages, upload files, stop AI generation, and automate workflows via 9 MCP tools or a local OpenAPI HTTP API.
-   - Repository: [cafeTechne/antigravity-link-extension](https://github.com/cafeTechne/antigravity-link-extension) | MCP Registry: io.github.cafeTechne/antigravity-link
-
-7. **nothumansearch** 🔎
-   - MCP server and search engine indexing 8,600+ agent-native services. Lets LLMs discover MCP-compatible services, OpenAPI providers, and llms.txt publishers by keyword, category, or minimum agentic readiness score (0-100).
-   - 6 tools: search_agents, get_site_details, get_stats, submit_site, register_monitor, verify_mcp.
-   - Endpoint: [nothumansearch.ai/mcp](https://nothumansearch.ai/mcp) | MCP Registry: ai.nothumansearch/search
-
-8. **Packrift MCP** 📦
-   - Remote MCP server for packaging procurement, exact-size SKU lookup, carton-fit recommendations, shipping estimates, and dimensional-weight calculations.
-   - Repository: [Packrift/packrift-mcp](https://github.com/Packrift/packrift-mcp)
-- [Helium MCP](https://github.com/connerlambden/helium-mcp) — Real-time news with 37-dimension bias scoring, ML options pricing, and live market data. [Interactive demo](https://connerlambden.github.io/helium-news-explorer/) · [REST API](https://heliumtrades.com/mcp-page/)
-
-9. **Screenpipe MCP** 🖥️
-   - Local-first MCP server backed by 24/7 screen and microphone recording with OCR, accessibility-tree, and transcript indexing.
-   - Lets AI assistants search and answer questions over everything you've seen, heard, and typed on your machine.
-   - Install: `claude mcp add screenpipe -- npx -y screenpipe-mcp@latest`
-   - Repository: [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe)
-
-## 🛠️ How to Use  
-
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/AIAnytime/MCP-Servers.git
-   cd MCP-Servers
-   ```
-2. Navigate to the desired server folder. Follow the respective README.md file for instructions.
-3. Watch the MCP Playlist on AI Anytime YT Channel if you face any problem.
-
-## 📢 Contribute  
-Feel free to open issues, submit pull requests, or suggest improvements!  
-
-## 📜 License  
-This project is open-source under the **MIT License**.  
+</div>
 
 ---
 
-🔔 **Like this project?** Give it a ⭐ on GitHub!  
+The [Model Context Protocol](https://modelcontextprotocol.io) is the open standard for connecting AI
+assistants to tools and data. This repository is two things:
 
-- [EventTrader MCP Server](https://github.com/eventtrader/event-trader-mcp) — AI prediction market trading: place bets, TGE token price predictions, real-time orderbooks, AI agent cloning, due diligence scoring. Remote endpoint at `cymetica.com/.well-known/mcp.json`. [Platform](https://cymetica.com?utm_source=github&utm_medium=pr&utm_campaign=mcp-outreach) | [TGE Markets](https://cymetica.com/tge-launch?utm_source=github&utm_medium=pr&utm_campaign=mcp-outreach)
-- [NotFair MCP](https://notfair.co) — Hosted Google Ads MCP server. Lets Claude and other AI agents diagnose campaign performance (CPA, ROAS, search-term waste, quality scores), recommend optimizations (bids, budgets, negative keywords, ad copy), and execute approved changes via the official Google Ads API with a built-in human-approval gate. Free tier plus paid plans. [Product](https://notfair.co)
-- [NotFair Skills](https://github.com/nowork-studio/NotFair) — Open-source Claude Code skills (~2.9k stars, MIT) for SEO, GEO, Google Ads, and Meta Ads. Connects to live data through Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP. Covers site analysis, keyword research, meta tags, schema markup, ad audits, wasted-spend detection, and Meta ROAS / creative-fatigue analysis.
-- [AskCyborg MCP](https://github.com/Ask-Cyborg/askcyborg-mcp) — Stress-tests every public and private company through intense analyst debate. 8 tools (search_companies, get_company_report, get_cyborg_score, compare_companies, find_competitors, search_by_industry, get_recent_developments, get_top_insights). Hosted at `https://mcp.askcyborg.com/mcp` — Streamable HTTP, anonymous free tier (20 req/min/IP), no API key. Source: MIT, TypeScript on Cloudflare Workers. Listed in the official MCP Registry as `io.github.Ask-Cyborg/askcyborg-mcp`.
-- [Xquik](https://github.com/Xquik-dev/x-twitter-scraper) - Remote MCP server for X/Twitter search, extraction workflows, account insights, webhooks, and SDK access. Docs: [docs.xquik.com/mcp/overview](https://docs.xquik.com/mcp/overview).
-- [TwitterAPI.io MCP Server](https://github.com/kaitoInfra/twitterapi-io-mcp-server) — Hosted MCP server for [twitterapi.io](https://twitterapi.io) (Twitter / X data API). 12 read-only tools: tweet search with full operators, profiles, followers, conversation threads, real-time WebSocket streaming, trending topics. Hosted endpoint at `mcp.twitterapi.io/mcp`, npm `@kaitoinfra/twitterapi-io-mcp-server`. Listed on MCP Registry as `io.github.kaitoInfra/twitterapi-io-mcp-server` (active since 2026-05-23).
-- [BuyWhere MCP](https://github.com/BuyWhere/buywhere-mcp) — Remote MCP server for cross-border e-commerce product search. 150M+ products across Singapore, SEA, and US markets with real-time price comparison. Install via `npx @buywhere/mcp-server`. Listed on MCP Registry as `io.github.BuyWhere/buywhere-mcp`.
+1. **A directory** — a curated, categorized list of MCP servers the community has built and shipped.
+2. **A teaching repo** — small, readable server implementations in Python you can clone, run, and copy from.
+
+Built and maintained by [AI Anytime](https://www.youtube.com/@AIAnytime). Additions come from the community — see [Contributing](#-contributing).
+
+## 🗒 Contents
+
+- [Servers in this repo](#-servers-in-this-repo)
+- [Quick start](#-quick-start)
+- [Community directory](#-community-directory)
+  - [Agents, IDEs & developer tools](#agents-ides--developer-tools)
+  - [Search & discovery](#search--discovery)
+  - [Knowledge, memory & context](#knowledge-memory--context)
+  - [Media & generation](#media--generation)
+  - [Security](#security)
+  - [Finance & markets](#finance--markets)
+  - [Marketing, content & social](#marketing-content--social)
+  - [Cloud, ops & data](#cloud-ops--data)
+  - [Commerce, travel & logistics](#commerce-travel--logistics)
+  - [Work & productivity](#work--productivity)
+- [Contributing](#-contributing)
+- [Resources](#-resources)
+- [License](#-license)
+
+## 🧱 Servers in this repo
+
+Reference implementations you can run locally. Each folder is self-contained — open it and follow its `README.md`.
+
+| Server | What it does | Stack |
+| --- | --- | --- |
+| [`weather`](./weather) | Active US weather alerts by state and short-term forecasts by lat/long, from the National Weather Service API. | Python · stdio |
+| [`linkedin-profile-mcp`](./linkedin-profile-mcp) | Fetches LinkedIn profile data as JSON through the Fresh LinkedIn Profile Data API on RapidAPI. | Python · stdio · needs `RAPIDAPI_KEY` |
+| [`pubmed-mcp-server`](./pubmed-mcp-server) | Searches PubMed and returns article abstracts, via BioPython's Entrez module. | Python · stdio |
+| [`mcp-wiki`](./mcp-wiki) | Reads a Wikipedia article and hands it back as clean Markdown. | Python · stdio |
+| [`http-sse-mcp-starter`](./http-sse-mcp-starter) | Starter template for a **remote** MCP server over HTTP/SSE (Starlette + FastMCP), with a matching client. | Python · SSE |
+| [`streamlit as an MCP Host`](./streamlit%20as%20an%20MCP%20Host) | Streamlit app acting as an MCP **host** — connects to an SSE server, calls its tools, summarizes with a local Ollama model. | Python · Streamlit |
+
+> [!TIP]
+> New to MCP? Read `weather` first (smallest surface area), then `http-sse-mcp-starter` to see the same
+> idea served remotely, then `streamlit as an MCP Host` to see the other side of the wire.
+
+## 🚀 Quick start
+
+```bash
+git clone https://github.com/AIAnytime/Awesome-MCP-Server.git
+cd Awesome-MCP-Server/weather
+
+uv sync              # or: pip install -r requirements.txt
+uv run weather.py
+```
+
+Then point an MCP client at it. With Claude Code:
+
+```bash
+claude mcp add weather -- uv --directory /absolute/path/to/Awesome-MCP-Server/weather run weather.py
+```
+
+For Claude Desktop, add the same command to `claude_desktop_config.json` under `mcpServers`.
+Stuck? The [MCP playlist on the AI Anytime YouTube channel](https://www.youtube.com/@AIAnytime) walks through it end to end.
+
+## 🌍 Community directory
+
+Servers built by the community. Entries are alphabetical within each category.
+
+**Legend** — `stdio` runs locally on your machine · `http` is a hosted remote server (nothing to install) · `sse` is a remote server over Server-Sent Events.
+
+### Agents, IDEs & developer tools
+
+- **[Agent QA](https://github.com/vostride/agent-qa)** `stdio` — Author, validate, run, and inspect natural-language web and mobile regression tests, with persistent test memory. Install: `npx -y agent-qa mcp`
+- **[Aident Loadout](https://github.com/Aident-AI/aident-skill)** `http` — Connect Codex, Claude Code, Cursor, ChatGPT and other MCP clients to 1,000+ apps and 400+ Skills through one reusable setup with Vault-protected credentials. Endpoint: `https://loadout.aident.ai/mcp` · [Docs](https://docs.aident.ai/loadout/overview) · [Website](https://aident.ai) · Registry: `io.github.Aident-AI/loadout`
+- **[AIHawk](https://github.com/feder-cr/AIHawk)** `stdio` - AI browser agent that browses, clicks, types, and reads real web pages from plain-English instructions. Install: `uvx aihawk`
+- **[Antigravity Link](https://github.com/cafeTechne/antigravity-link-extension)** `stdio` — Mirror active AI chat sessions from Google's Antigravity IDE to your phone: send messages, upload files, stop generation, automate workflows across 9 tools. Registry: `io.github.cafeTechne/antigravity-link`
+- **[API.market MCP Gateway](https://api.market/mcp)** `http` — Discover and call 580+ APIs through five gateway tools, with OAuth or API-key authentication; pricing and free tiers vary by API. Endpoint: `https://api.market/api/mcp/gateway`
+- **[Archcore](https://github.com/archcore-ai/archcore)** `stdio` — Git-native context engineering CLI and MCP server for AI coding agents. Keep specs, ADRs, rules, plans, and project knowledge in Git. Install: `curl -fsSL https://archcore.ai/install.sh | bash` · [Docs](https://docs.archcore.ai)
+- **[claude-node](https://github.com/claw-army/claude-node)** `stdio` — Python subprocess bridge to the Claude Code CLI, giving Python direct access to Claude Code's native capabilities over stream-json.
+- **[Ganado Bridge](https://github.com/cynarax/bridge-by-ganado)** `stdio` — Checked local file edits (SHA-256-gated), bounded reads/search and persistent command sessions with real exit codes on macOS. Install: `.mcpb` bundle from releases · [Docs](https://ganado-bridge.vercel.app/install)
+- **[OpenAPI to MCP Cloud Bridge](https://github.com/notsariedo/openapi-mcp-gateway)** `sse` — Zero-setup hosted bridge that turns any OpenAPI JSON spec into a remote MCP server. [Hosted bridge](https://mcp-bridge-saas.onrender.com)
+- **[OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay)** `stdio` — Read-only window into a local library of recorded agent runs: six tools (`list`, `show`, `checkpoints`, `graph`, `replay`, `compare`) over the prompts, tool calls and responses an agent already exchanged, so a failed run can be replayed offline or diffed against another. Install: `npx -y orcareplay mcp`
+- **[Roundtable](https://github.com/askbudi/roundtable)** `stdio` — Zero-configuration server that unifies multiple AI coding assistants (Codex, Claude Code, Cursor, Gemini) behind one interface with auto-discovery. [Website](https://askbudi.ai/roundtable)
+- **[SandBase CLI](https://github.com/sandbaseai/cli)** `stdio` — Agent-first CLI and MCP bridge for discovering, inspecting, and running 2,000+ AI models on one account — search, scraping, multimodal generation, data APIs, sandboxes. Install: `npx -y @sandbaseai/cli connect` · [Website](https://sandbase.ai)
+- **[since-cutoff](https://github.com/MohammadHijjawi97/since-cutoff)** `stdio` — Reports which APIs of a project's pinned Python dependencies changed after a coding model's training cutoff, from a static diff of the two releases, and where the project's code uses them; no model calls or API key. Install: `uvx since-cutoff mcp` · Registry: `io.github.MohammadHijjawi97/since-cutoff`
+- **[Skillselion](https://github.com/skillselion/skillselion-mcp)** `stdio` — On-demand skill loader over a catalog of 79,000+ agent skills, MCP servers, and plugins; materializes the matching `SKILL.md` and its scripts into the session mid-task. Install: `npx -y skillselion-mcp` · [Website](https://skillselion.com)
+- **[Zambo](https://github.com/zambodotdev/zambo-mcp)** `http` — 120 native tools across 17 products: strategy, code audit, lead generation, onchain scoring, credit discovery, prompt defense. Endpoint: `https://zambo.dev/api/mcp`, zero auth, no signup. [Website](https://zambo.dev)
+
+### Search & discovery
+
+- **[AISOTools](https://github.com/shibley/aisotools-mcp-server)** `http` — Search a curated catalog of 1,766 AI tools by keyword, category, or pricing; compare 2–5 products side by side and find alternatives. Read-only, no API key, sponsored results flagged. Install: `claude mcp add --transport http aisotools https://aisotools.com/api/mcp` · [Docs](https://aisotools.com/mcp)
+- **[Court Rules](https://github.com/foklepoint/court-rules-mcp)** `http` — U.S. federal court rules, local rules, judge standing orders, court holidays and filing deadline checks; API key required, free tier. Endpoint: `https://mcp.courtrules.app/mcp`
+- **[nothumansearch](https://nothumansearch.ai/mcp)** `http` — Search engine over 8,600+ agent-native services: discover MCP servers, OpenAPI providers, and llms.txt publishers by keyword, category, or agentic-readiness score. Registry: `ai.nothumansearch/search`
+- **[Papers by Ouroboros Apps](https://github.com/LAHutchins91/papers-mcp)** `http` — Research paper search with real citations from OpenAlex, Semantic Scholar, PubMed, Crossref, and arXiv: find papers, fetch abstracts, follow citations, and format references. OAuth sign-in. Endpoint: `https://papers-mcp.vercel.app/mcp` · [Docs](https://ouroborosapps.com/docs/papers) · [Ouroboros Apps](https://ouroborosapps.com)
+- **[Parallel Search](https://docs.parallel.ai/integrations/mcp/search-mcp)** `http` — Free live web search and URL fetching, no account or API key. Endpoint: `https://search.parallel.ai/mcp`
+- **[Patent by Ouroboros Apps](https://github.com/LAHutchins91/patent-mcp)** `http` — USPTO patent search and prior art lookup: search public patent records, fetch a patent, list citations, and run a prior-art search. Not legal advice. Hosted coverage is USPTO only. OAuth sign-in. Endpoint: `https://patent-mcp.vercel.app/mcp` · [Docs](https://ouroborosapps.com/docs/patent) · [Ouroboros Apps](https://ouroborosapps.com)
+- **[TwitterAPI.io](https://github.com/kaitoInfra/twitterapi-io-mcp-server)** `http` — 12 read-only tools over [twitterapi.io](https://twitterapi.io): tweet search with full operators, profiles, followers, conversation threads, real-time streaming, trending topics. Endpoint: `mcp.twitterapi.io/mcp`
+- **[Vend API Merchant](https://extract.paypercall.dev)** `http` — Pay-per-call web intelligence: extract clean text from URLs, web search, link checking, domain WHOIS/DNS/SSL info, IP geolocation, and PDF text extraction. 22+ endpoints, no signup or API key, each call settles in Nano (XNO) via x402 at 0.0001–0.0005 XNO. Endpoint: `https://extract.paypercall.dev/mcp` · [Docs](https://extract.paypercall.dev) · Registry: `dev.paypercall.extract/vend-api-merchant`
+- **[Xquik](https://github.com/Xquik-dev/x-twitter-scraper)** `http` — X/Twitter search, extraction workflows, account insights, webhooks, and SDK access. [Docs](https://docs.xquik.com/mcp/overview)
+
+- **[Statsnet](https://github.com/usenetstate/statsnet-mcp)** `http` — Background check any company in the world: registration, executives, courts and finances. Endpoint: `https://statsnet.co/mcp` · Registry: `io.github.usenetstate/statsnet`
+### Knowledge, memory & context
+
+- **[ContextStream](https://github.com/contextstream/mcp-server)** `http` — Shared persistent memory and semantic code search for AI coding agents (Cursor, Claude Code, Codex, Grok, Windsurf). Free tier; hosted OAuth or API key. Endpoint: `https://mcp.contextstream.io/mcp` · [Website](https://contextstream.io)
+- **[Continuity by Ouroboros Apps](https://github.com/LAHutchins91/continuity-mcp)** `http` — Story continuity for fiction writers: a series bible and novel memory that keeps characters, places, timelines, and plot facts consistent across chats. OAuth sign-in. Endpoint: `https://continuitywriter.com/mcp` · [Website](https://continuitywriter.com) · [Ouroboros Apps](https://ouroborosapps.com)
+- **[GoodMemory](https://github.com/hjqcan/GoodMemory)** `stdio` — Local-first, auditable memory for coding agents. SQLite-backed, read-only context/trace/search tools by default, with durable writes opt-in behind inspect, revise, forget, and export. Install: `npm install -g goodmemory`
+- **[Hyperconsciousness](https://github.com/louis030195/hyperconsciousness)** `stdio` — Developer-alpha encrypted knowledge store with search and retrieval through scoped, expiring grants. · [Docs](https://github.com/louis030195/hyperconsciousness#give-an-agent-limited-access)
+- **[Mnemoverse](https://github.com/mnemoverse/mcp-memory-server)** `http` — Hosted persistent memory for AI agents with shared rooms; tell it a recalled memory helped or misled and it re-ranks what comes back next. Free tier; OAuth on the hosted endpoint, API key for the npm package. Endpoint: `https://mcp.mnemoverse.com/mcp` · Install: `npx -y @mnemoverse/mcp-memory-server@latest` · [Docs](https://mnemoverse.com/docs)
+- **[Neither](https://github.com/stonianua/neither-mcp)** `stdio` ? Project context your AI can query through MCP. Selected notes/docs for Cursor or Claude Desktop; related retrieval with source evidence. Install: `npx -y @neitherai/mcp-server`. Registry: `io.github.stonianua/neither-mcp`. [Start](https://www.neither.online/start/?product=dev)
+- **[ORANO](https://github.com/infotik/orano-mcp-server)** `http` — Read-only access to your ORANO library: projects built from saved Reels, videos, articles and PDFs, with summaries, ordered tasks, selectable video context and curated memory facts. Paid web plan; API key required. Endpoint: `https://orano-ai-backend-1037939693300.us-central1.run.app/mcp/` · [Website](https://oranoai.com/mcp)
+- **[Screenpipe](https://github.com/screenpipe/screenpipe)** `stdio` — Source-available MCP access to searchable local screen text and audio transcripts. Requires a running Screenpipe recorder and local API authentication. Install: `claude mcp add screenpipe -- npx -y screenpipe-mcp@latest` · [Docs](https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp#installation)
+
+### Media & generation
+
+- **[audio](https://github.com/audiojs/audio)** `stdio` — Edit, analyze and convert audio files and the sound of videos, no ffmpeg: loudness and true peak, checks against ACX, podcast, streaming and EBU R 128 specs, denoise, EQ, trim, fades, BPM, key. Install: `npx -y audio --mcp` · [Docs](https://github.com/audiojs/audio#mcp)
+- **[Magic Hour](https://github.com/magichourhq/magic-hour-mcp)** `http` — Generate and edit video, images, and audio with 44 Magic Hour API tools. Endpoint: `https://mcp.magichour.ai/` (bearer API key required) · [Setup](https://magichour.ai/mcp)
+- **[Motomarks](https://motomarks.io/docs/mcp)** `http` — Search a published automotive brand library and build logo CDN URLs for Claude, Cursor, and VS Code. Endpoint: `https://motomarks.io/api/mcp` (OAuth or API key; free account, no credit card)
+- **[prompt-to-asset](https://github.com/MohamedAbdallah-14/prompt-to-asset)** `stdio` — Routes image-generation prompts to 30+ models (DALL·E, Stable Diffusion, Flux, Midjourney) through one interface. Install: `npm install -g prompt-to-asset`
+- **[RunAPI](https://github.com/runapi-ai/mcp)** `stdio` — Browse the RunAPI model catalog and run image, video, music/audio, text-to-speech, and LLM tasks from agent workflows. Install: `npx -y @runapi.ai/mcp`
+- **[UpRes](https://github.com/auroracapital/upres-cli)** `stdio` — UpRes MCP: list models, credits, and submit 4K image and video upscale jobs. Install: `npx -y upres-cli`
+
+### Security
+
+- **[Council of AI (GSPC)](https://github.com/CSOAI-ORG/councilof-ai/tree/master/mcp/gspc-server)** `http` — Reads a public board of signed AI behaviour measurement cards and verifies Ed25519 signatures and Merkle inclusion; read tools need no key, evidence tools are x402-metered. Endpoint: `https://councilof.ai/mcp` · Install: `npx -y csoai-gspc-mcp` · Registry: `io.github.CSOAI-ORG/gspc`
+- **[Darkmoon](https://github.com/ASCIT31/Dark-Moon)** `stdio` — Open-source (GPLv3) autonomous penetration-testing platform orchestrating 80+ offensive security tools through 50 specialist agents, with proof of exploitation behind every finding. Runs fully locally.
+- **[Skycloak MCP](https://github.com/sky-cloak/skycloak-mcp)** `http` — Managed Keycloak identity MCP server for AI agents (OIDC/OAuth realms, users, clients, SSO). Endpoint: `https://mcp.skycloak.io` · [Docs](https://skycloak.io/mcp) · Registry: `io.skycloak/skycloak-mcp`
+
+### Finance & markets
+
+- **[AskCyborg](https://github.com/Ask-Cyborg/askcyborg-mcp)** `http` — Stress-tests public and private companies through analyst debate: reports, scores, comparisons, competitors, recent developments. Anonymous free tier, no API key. Endpoint: `https://mcp.askcyborg.com/mcp`
+- **[Deposit by Ouroboros Apps](https://github.com/LAHutchins91/deposit-mcp)** `http` — Freelance deposit and payment schedule: approved deposits, payment dates, and client wording; deposit waivers and date changes need approval. OAuth sign-in. Endpoint: `https://deposit-continuity2.vercel.app/mcp` · [Docs](https://ouroborosapps.com/docs/deposit) · [Ouroboros Apps](https://ouroborosapps.com)
+- **[Eulerpool](https://github.com/eulerpool/eulerpool-mcp)** `http` — Financial data for AI agents: 250+ tools over stocks, fundamentals, ETFs, macro (FRED/ECB/IMF/World Bank), crypto, FX, insider trades, congress trading and options flow. Free tier, API key or OAuth. Endpoint: `https://api.eulerpool.com/mcp` · [Docs](https://eulerpool.com/developers/mcp-server)
+- **[EventTrader](https://github.com/eventtrader/event-trader-mcp)** `http` — Prediction-market trading: place bets, TGE token price predictions, real-time orderbooks, agent cloning, due-diligence scoring. [Platform](https://cymetica.com)
+- **[Helium](https://github.com/connerlambden/helium-mcp)** `http` — Real-time news with 37-dimension bias scoring, ML options pricing, and live market data. [Interactive demo](https://connerlambden.github.io/helium-news-explorer/) · [REST API](https://heliumtrades.com/mcp-page/)
+- **[Invoice by Ouroboros Apps](https://github.com/LAHutchins91/invoice-mcp)** `http` — Freelance invoice records: approved invoice line items, quantities, agreed rates, due dates, and late terms; invoice changes need explicit approval. OAuth sign-in. Endpoint: `https://invoice-continuity2.vercel.app/mcp` · [Docs](https://ouroborosapps.com/docs/invoice) · [Ouroboros Apps](https://ouroborosapps.com)
+- **[Invompt](https://github.com/Invompt/invompt-mcp)** `http` — Turn AI-host work into invoices you review before send; Continue as guest or OAuth via hosted MCP. Endpoint: `https://mcp.invompt.com/mcp` · [Website](https://www.invompt.com) · Registry: `com.invompt/invompt`
+- **[VoxOdds](https://github.com/softdevfz/voxodds-mcp)** `http` — Prediction-market research across Polymarket and Kalshi: odds for the same contract on both venues, the all-in executable price for a budget with estimated taker fees and which venue fills cheaper, trending markets, edge signals and an audited forecast track record. Read-only, no API key. Endpoint: `https://voxodds.com/mcp` · [Docs](https://voxodds.com/llms.txt) · Registry: `com.voxodds/voxodds`
+
+### Marketing, content & social
+
+- **[Autoposting](https://github.com/Autoposting-ai/autoposting-mcp)** `http` — Draft, schedule, and publish to X, LinkedIn, Instagram, Threads, and YouTube, plus AI carousels and video clipping. OAuth 2.1 with dynamic client registration — no secret to paste. Install: `claude mcp add --transport http autoposting https://app.autoposting.ai/mcp`
+- **[BulkPublish](https://github.com/azeemkafridi/bulkpublish-api)** `http` — Plan, review, schedule, publish, and analyze social media content for AI agents through BulkPublish. Endpoint: `https://mcp.bulkpublish.com/mcp` · [Docs](https://app.bulkpublish.com/docs)
+- **[Claim by Ouroboros Apps](https://github.com/LAHutchins91/claim-mcp)** `http` — Brand claims and marketing copy compliance: approved claims, offers, proof, brand voice, and banned phrases, with a check that rejects copy inventing a guarantee or discount. OAuth sign-in. Endpoint: `https://claim-continuity2.vercel.app/mcp` · [Docs](https://ouroborosapps.com/docs/claim) · [Ouroboros Apps](https://ouroborosapps.com)
+- **[Liftli](https://github.com/liftli-ai/liftli-mcp)** `http` — Head-of-content for LinkedIn, X, and Substack: extracts your voice from your own posts, turns voice notes and transcripts into drafts, critiques them, then publishes through official platform APIs. 54 tools, no scraping.
+- **[LogNorm](https://github.com/lognorm/lognorm-mcp)** `http` — Site and GEO audits ranked into a backlog that Claude Code, Codex and Cursor can fix, write and track (including how AI assistants answer buyer prompts). OAuth 2.1 with dynamic client registration; free plan. Endpoint: `https://lognorm.com/api/mcp` · [Docs](https://lognorm.com/docs/agents)
+- **[NotFair](https://notfair.co)** `http` — Google Ads diagnostics (CPA, ROAS, search-term waste, quality scores) and optimizations executed through the official Google Ads API behind a human-approval gate.
+- **[NotFair Skills](https://github.com/nowork-studio/NotFair)** — *Skills, not a server.* Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads that pull live data through the Google Ads, Meta Ads, Search Console, and GA4 MCP servers.
+- **[Rank by Ouroboros Apps](https://github.com/LAHutchins91/rank-mcp)** `http` — SEO rankings from Google Search Console, read-only: top queries and pages, traffic trends, period comparisons, quick wins, dropped pages, and URL inspection. OAuth sign-in. Endpoint: `https://rank.ouroborosapps.com/mcp` · [Docs](https://ouroborosapps.com/docs/rank) · [Ouroboros Apps](https://ouroborosapps.com)
+- **[Robot Speed](https://github.com/robot-speed/mcp)** `http` — AI SEO MCP: content calendar, keyword research, site audits, backlinks, and CMS publishing. OAuth remote. Endpoint: `https://www.robot-speed.com/api/mcp` · [Website](https://www.robot-speed.com/mcp)
+- **[SearchLink Lite](https://github.com/GlobalMatchHub/searchlink-lite)** `stdio` — Google Search Console inside your MCP client: search performance by query, page, country or device, ranking opportunities, URL indexing, sitemaps and on-page checks. Eight read-only tools, runs locally with a service account or gcloud credentials. Install: `npx -y github:GlobalMatchHub/searchlink-lite`
+- **[Testimonials.ltd](https://testimonials.ltd/integrations/claude)** `http` - Testimonials and wall of love widgets: import reviews, approve, tag and pin the best ones from chat. Endpoint: `https://testimonials.ltd/mcp` · [Docs](https://testimonials.ltd/integrations/claude)
+- **[ThreadFox Lite](https://github.com/amflimited/threadfox-lite)** `stdio` — Read-only Reddit research through your own signed-in Chrome: a subreddit's rules with self-promotion rules flagged, communities for a topic, an account's standing, and whether a post is still live. No API keys.
+- **[Unfetch](https://unfetch.com/plugin)** `http` — Google Ads MCP reporting for campaign spend, conversions, and search terms, plus Google Analytics, Search Console, keyword research, and web research with read-only account access; OAuth and a free plan. Endpoint: `https://unfetch.com/api/mcp` · [Website](https://unfetch.com)
+- **[Upload-Post](https://github.com/Upload-Post/upload-post-mcp)** `http` — Publish and schedule videos, photos, carousels, text and documents to TikTok, Instagram, YouTube, LinkedIn, Facebook, X, Threads, Pinterest, Reddit, Bluesky and Google Business Profile, and read post analytics and comments; OAuth or API key, free plan. Install: `npx -y @upload-post/mcp` (stdio) or endpoint `https://mcp.upload-post.com/mcp` · [Docs](https://docs.upload-post.com/guides/mcp-server-integration/)
+- **[VoiceMoat](https://github.com/prateeks367/voicemoat-mcp)** `http` — Personal brand tools for Twitter/X and LinkedIn: score a draft against your own voice profile, improve it, read your analytics and top posts, and publish or schedule after a preview and a confirmed second call; OAuth, needs a VoiceMoat Pro or Enterprise plan. Endpoint: `https://app.voicemoat.com/api/mcp` · [Website](https://voicemoat.com/mcp) · Registry: `com.voicemoat/voicemoat`
+
+
+### Cloud, ops & data
+
+- **[Cohesivity](https://github.com/cohesivity-org/cohesivity-plugin)** `http` — Agent-native backend services for hosting, Postgres, email, storage, containers, LLMs, voice, and third-party APIs, with free tiers, $5/month in AI and Search credits, and x402 top-ups. This remote MCP requires OAuth sign-in; anonymous no-signup setup uses the local MCP. Endpoint: `https://cohesivity.ai/mcp/manage` · [Docs](https://github.com/cohesivity-org/cohesivity-plugin#local-bootstrap-and-remote-oauth-are-independent)
+- **[Zopnight](https://zop.dev/learn/mcp-server)** `http` — Read-only cloud cost and infrastructure governance across AWS, Azure, and GCP: 85 tools spanning cost, resources, schedules, recommendations, budgets, and diagnostics. Install: `claude mcp add --transport http zopnight https://api.zop.dev/mcp-server --header "Authorization: Bearer zn_pat_YOUR_TOKEN"` · [Claude setup](https://zop.dev/learn/how-to/set-up-zopnight-mcp-for-claude)
+
+### Commerce, travel & logistics
+
+- **[BuyWhere](https://github.com/BuyWhere/buywhere-mcp)** `http` — Hosted product-search MCP across 370M+ listings in Singapore, SEA, and US markets with real-time price comparison. Endpoint: `https://api.buywhere.ai/mcp` (no API key). Install: `npx -y @buywhere/mcp-server` · [Docs](https://docs.buywhere.ai)
+- **[CardDeals](https://github.com/cello305/carddeals-mcp)** `http` — Query and compare real-time discounted digital gift cards across 700+ brands. Endpoint: `https://catalog.carddeals.co/mcp` · [Docs](https://carddeals.co/mcp)
+- **[HOTLIKESHOP](https://github.com/tuanone123/hotlikeshop-mcp)** `http` — Search a catalog of social-media accounts, proxies, and digital services and buy them right inside the chat; free to connect, no key for lookup. Endpoint: `https://hotlikeshop.com/api/mcp` · [Docs](https://hotlikeshop.com/ai)
+- **[MAQAMI Travel](https://github.com/negm17111995/mcp-server)** `http` — Official MCP server for MAQAMI, a hotel and flight booking platform with 3M+ hotels. Search live hotel rates and flights, look up places, airports and hotel details, then prebook and book. Endpoint: `https://mcp.maqami.co/`, no API key required · [Website](https://maqami.co)
+- **[Packrift](https://github.com/Packrift/packrift-mcp)** `http` — Packaging procurement: exact-size SKU lookup, carton-fit recommendations, shipping estimates, and dimensional-weight calculations.
+- **[Pocket Drives](https://github.com/RevList/pocket-drives-mcp)** `http` — Search peer-to-peer luxury, exotic, and EV rentals from independent hosts. Endpoint: `https://pocketdrives.ai/mcp`, no auth.
+- **[StayingAPI](https://github.com/stayingapi/hotel-mcp)** `http` — Accommodation data across Airbnb, Booking.com, Vrbo, and Google Hotels: search stays and read live listings, rates, availability and reviews. Endpoint: `https://mcp.stayingapi.com/mcp` · [Docs](https://stayingapi.com)
+
+### Work & productivity
+
+- **[AI Applyd](https://github.com/whateverneveranywhere/aiapplyd-mcp)** `http` — ATS resume scoring, job-description analysis, interview prep, cover letters, resume building, and auto-apply that submits on the employer's own hiring system. [Website](https://aiapplyd.com/mcps)
+- **[CareClinic Health Tracker](https://cdn.careclinic.io/mcp/help/index.html)** `http` — Review personal medication schedules, symptoms, mood, and confirmed health check-ins through an authorized CareClinic account. Endpoint: `https://mcp.careclinic.io/mcp`
+- **[Desk by Ouroboros Apps](https://github.com/LAHutchins91/desk-mcp)** `http` — Customer support policy for assistants: approved support answers, refund rules, and escalation limits read before replying; unapproved promises go to human review. OAuth sign-in. Endpoint: `https://desk-mcp-continuity2.vercel.app/mcp` · [Docs](https://ouroborosapps.com/docs/desk) · [Ouroboros Apps](https://ouroborosapps.com)
+- **[Milestone by Ouroboros Apps](https://github.com/LAHutchins91/milestone-mcp)** `http` — Freelance project milestones: approved milestones, deliverables, and acceptance criteria; a milestone is only done when the saved criteria are met. OAuth sign-in. Endpoint: `https://milestone-continuity2.vercel.app/mcp` · [Docs](https://ouroborosapps.com/docs/milestone) · [Ouroboros Apps](https://ouroborosapps.com)
+- **[Office Suite](https://github.com/theluckystrike/mcp-servers)** `stdio` — Bundle of MCP servers for freelance and back-office work: invoices, spreadsheets, PDFs, time tracking, expense tracking, resumes, and contracts. [Hosted](https://mcp.zovo.one)
+- **[Process Street](https://github.com/process-street/process-street-mcp)** `http` — Connect agents to Process Street workflows, tasks, runs, data sets, and operational records, with an interactive authorization flow. [Docs](https://www.process.st/help/docs/mcp-server/)
+- [HostDeFi](https://hostdefi.com) — free token-safety scanner grading tokens A+–F from on-chain checks (mint/freeze authority, liquidity, holder concentration) across Solana + 7 EVM chains. Keyless REST API, hosted MCP, x402 endpoints.
+- **[Scope by Ouroboros Apps](https://github.com/LAHutchins91/scope-mcp)** `http` — Freelance scope of work: approved scope, rates, deadlines, and change orders, so an assistant cannot promise work or discounts that were not approved. OAuth sign-in. Endpoint: `https://scope-continuity2.vercel.app/mcp` · [Docs](https://ouroborosapps.com/docs/scope) · [Ouroboros Apps](https://ouroborosapps.com)
+
+## 🤝 Contributing
+
+Contributions are very welcome — this list is only as good as the people adding to it.
+
+**Adding a server?** Read **[CONTRIBUTING.md](CONTRIBUTING.md)** first. The short version:
+
+- One server per pull request.
+- Add it as a **bullet** in the right category, in alphabetical order. Please don't renumber anything or introduce numbered lists.
+- Use the exact entry format:
+  ```markdown
+  - **[Name](https://link-to-repo-or-docs)** `stdio|http|sse` — One sentence on what it does. Install: `command` · [Docs](https://…)
+  ```
+- Keep it to one or two sentences. No marketing copy, no tracking parameters in URLs.
+- The server must actually exist, speak MCP, and be reachable by someone who isn't you.
+
+<a href="https://github.com/AIAnytime/Awesome-MCP-Server/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AIAnytime/Awesome-MCP-Server" alt="Contributors" />
+</a>
+
+## 📚 Resources
+
+- [Model Context Protocol — documentation](https://modelcontextprotocol.io)
+- [MCP specification](https://modelcontextprotocol.io/specification)
+- [Official MCP registry](https://registry.modelcontextprotocol.io)
+- [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) · [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
+- [AI Anytime on YouTube](https://www.youtube.com/@AIAnytime) — MCP tutorials and walkthroughs
+
+## 📜 License
+
+[MIT](LICENSE). Listed third-party servers carry their own licenses — check each project before using it.
+
+---
+
+<div align="center">
+
+**Found this useful? Star the repo ⭐ — it's how other people find it.**
+
+</div>
